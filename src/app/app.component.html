@@ -1,6 +1,10 @@
 <h1 class="title">List of Pokemon</h1>
-<ul *ngFor="let data of pokemon.results">
-  <li>{{ data.name }}</li>
-</ul>
-<button (click)="prev()" [disabled]="disabling">Prev</button>
-<button (click)="next()" [disabled]="disabling">Next</button>
+<div class="container">
+  <ul *ngFor="let data of pokemon.results.slice(0, 10)">
+    <li>{{ data.name }}</li>
+  </ul>
+</div>
+<div class="btn-section">
+  <button (click)="prev()" [disabled]="disabling">Prev</button>
+  <button (click)="next()" [disabled]="disabling">Next</button>
+</div>

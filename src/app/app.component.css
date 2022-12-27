@@ -4,3 +4,14 @@ button {
   background-color: burlywood;
   cursor: pointer;
 }
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  overflow-y: scroll;
+  height: 50vh;
+}
+.btn-section {
+  display: flex;
+  justify-content: center;
+}
